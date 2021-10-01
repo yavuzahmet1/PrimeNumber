@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        int counter = 0;
+        for (int number = 2; number <= 100; number++) {
+            int primeNumber = 0;
+            for (int i = 2; i < number; i++) {
+                if (number % i == 0) {
+                    primeNumber = 1;
+                    break;
+                }
+            }
+            if (primeNumber == 0) {
+                System.out.print(number + "\n");
+                number++;
+            }
+        }
+    }
+}
+
